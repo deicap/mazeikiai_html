@@ -1,0 +1,153 @@
+
+
+.valdymo-strukturos-schema {
+
+	position: relative;
+	min-height: 370px;
+	
+
+	div[class^="schema-"] {
+		position: absolute;
+		z-index: 1;
+	}
+	
+	div[class^="schema-linija-"] {
+	
+		background: #2d2d2d;
+		width: 3px;
+		height: 3px;
+		display: block;
+		z-index: 2;
+		
+	}
+
+	div[class^="schema-objektas-"] {
+	
+		display: table;
+		width: 170px;
+		z-index: 3;
+		@include border-radius(3px);
+		
+		> a {
+			display: table-cell;
+			color: #fff;
+			background: #3e91da;
+			padding: 15px;
+			font-size: 13px;
+			vertical-align: middle;
+			text-align: center;
+			text-decoration: none !important;
+			@include border-radius(3px);
+			
+			&:hover {
+				text-decoration: none !important;
+				background: lighten(#3e91da, 12%);
+			}
+			
+		}
+		
+	}
+	
+	div.schema-objektas-1 {
+		width: 200px;
+		top: 0;
+		left: 0;
+	}
+	
+	div.schema-objektas-2 {
+		top: 85px;
+		left: 30px;
+	}
+	
+	div.schema-objektas-3 {
+		top: 150px;
+		left: 30px;
+	}
+	
+	div.schema-objektas-4 {
+		top: 220px;
+		left: 30px;
+	}
+	
+	div.schema-objektas-5 {
+		top: 85px;
+		left: 300px;
+	}
+	
+	div.schema-objektas-6 {
+		top: 150px;
+		left: 300px;
+	}
+	
+	div.schema-objektas-7 {
+		top: 220px;
+		left: 300px;
+	}
+	
+	div.schema-objektas-8 {
+		width: 200px;
+		top: 310px;
+		left: 155px;
+	}
+	
+	div.schema-linija-1 {
+		top: 60px;
+		left: 100px;
+		height: 40px;
+	}
+	
+	div.schema-linija-2 {
+		top: 125px;
+		left: 100px;
+		height: 40px;
+	}
+	
+	div.schema-linija-3 {
+		top: 105px;
+		left: 10px;
+		height: 140px;
+	}
+	
+	div.schema-linija-4 {
+		top: 105px;
+		left: 10px;
+		width: 30px;
+	}
+	
+	div.schema-linija-5 {
+		top: 245px;
+		left: 10px;
+		width: 30px;
+	}
+	
+	div.schema-linija-6 {
+		top: 32px;
+		left: 200px;
+		width: 50px;
+	}
+	
+	div.schema-linija-7 {
+		top: 107px;
+		left: 250px;
+		width: 50px;
+	}
+	
+	div.schema-linija-8 {
+		top: 171px;
+		left: 250px;
+		width: 50px;
+	}
+	
+	div.schema-linija-9 {
+		top: 247px;
+		left: 250px;
+		width: 50px;
+	}
+	
+	div.schema-linija-10 {
+		top: 32px;
+		left: 250px;
+		height: 290px;
+	}
+	
+}

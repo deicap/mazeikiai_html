@@ -1,0 +1,19 @@
+
+
+.listing {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.listing-item {
+
+	position: relative;
+	border-bottom: #e0e0e0 1px solid;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	
+	*:last-child {
+		margin-bottom: 0;
+	}
+
+}

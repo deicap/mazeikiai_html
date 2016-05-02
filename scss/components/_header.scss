@@ -1,0 +1,421 @@
+
+.site-header {
+
+	position: relative;
+	z-index: 20;
+	margin-bottom: 20px;
+	background: transparent url('images/site-header-bg.jpg') no-repeat top center;
+	
+	&:after {
+		content: " ";
+		position: absolute;
+		display: block;
+		bottom: -13px;
+		left: 0;
+		width: 100%;
+		background: transparent url('images/site-header-bg-bottom.jpg') no-repeat bottom center;
+		height: 27px;
+		z-index: 21;
+	}
+	
+}
+
+
+.site-header-animation {
+	position: absolute;
+	z-index: 20;
+	top: 61px;
+	left: 198px;
+}
+
+.site-header-contents {
+	padding: 40px 0 0 0;
+	position: relative;
+	z-index: 22;
+}
+
+.site-logo {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.site-logo-title {
+	font-family: $font-family-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	max-width: 200px;
+	margin: 15px 0 0 10px;
+}
+
+.site-logo-image {
+	display: block;
+	background: transparent url('images/herbas.gif') no-repeat center center;
+	width: 74px;
+	height: 90px;
+}
+
+.site-header-contact {
+	
+	min-height: 147px;
+	line-height: 1.2;
+	color: $gray;
+	margin-left: 10px;
+	
+	a {
+		color: inherit !important;
+	}
+	
+}
+
+.site-secondary-nav {
+
+	text-align: right;
+	padding-right: 105px;
+	margin-bottom: 21px;
+	
+	> ul {
+		
+		display: inline-block;
+		position: relative;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		&:after {
+			content: " ";
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+		
+		> li {
+			
+			display: block;
+			position: relative;
+			margin: 0;
+			padding: 0 10px;
+			text-align: enter;
+			float: left;
+			color: $brand-primary !important;
+
+			+ li {
+				
+				border-left: $brand-primary 1px dashed;
+				
+			}
+			
+			> a {
+				
+				color: $brand-primary !important;
+				
+				&:hover {
+					
+					.fa {
+						@include opacity(0.75);
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.site-primary-nav {
+	
+	position: relative;
+	z-index: 12;
+	
+	// first level menu
+	
+	> ul {
+		
+		display: block;
+		margin: 0 -2px;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		
+		&:after {
+			content: " ";
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+		
+		> li {
+
+			display: block;
+			margin: 0;
+			padding: 0;
+			float: left;
+			position: relative;
+			width: 20%;
+
+			&:after {
+				content: " ";
+				position: absolute;
+				display: block;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				background: transparent url('images/primary-nav-wave.png') no-repeat 0 0;
+				height: 27px;
+				z-index: 23;
+			}
+				
+			&:nth-child(1) {
+			
+				&:after {
+					background: transparent url('images/primary-nav-wave.png') no-repeat -12px 0;
+				}
+			
+			}
+			
+			&:nth-child(2) {
+			
+				&:after {
+					background: transparent url('images/primary-nav-wave.png') no-repeat -202px 0;
+				}
+			
+			}
+			
+			&:nth-child(3) {
+			
+				&:after {
+					background: transparent url('images/primary-nav-wave.png') no-repeat -412px 0;
+				}
+			
+			}
+			
+			&:nth-child(4) {
+			
+				&:after {
+					background: transparent url('images/primary-nav-wave.png') no-repeat -622px 0;
+				}
+			
+			}
+			
+			&:nth-child(5) {
+			
+				&:after {
+					background: transparent url('images/primary-nav-wave.png') no-repeat -797px 0;
+				}
+			
+			}
+			
+			> a {
+			
+				text-align: center;
+				background: #000;
+				@include vertical-gradient(#686868, #0e0e0e);
+				color: #fff;
+				display: block;
+				border: #717171 1px solid;
+				@include border-radius($border-radius);
+				
+				-webkit-box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+				-moz-box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+				box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+				
+				padding: 4px;
+				text-decoration: none !important;
+				text-transform: uppercase;
+				font-family: $font-family-serif-alt;
+				font-size: 14px;
+				font-weight: bold;
+				min-height: 59px;
+				margin: 0 2px;
+				
+				> span {
+					display: inline-block;
+					max-width: 110px;
+					line-height: 1.2;
+				}
+				
+			}
+
+			// second level menu
+			
+			> ul {
+				
+				z-index: 24;
+				display: block;
+				margin: 0 2px;
+				padding: 0;
+				list-style: none;
+				display: none;
+				
+				position: absolute;
+				top: 100%;
+				top: calc(100% - 4px);
+				left: 0;
+				width: 100%;
+				width: calc(100% - 4px);
+				
+			
+				
+				border: #717171 1px solid;
+				@include border-radius($border-radius);
+				-webkit-box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+				-moz-box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+				box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+				
+				> li {
+
+					display: block;
+					margin: 0 1px;
+					padding: 0;
+					position: relative;
+					border-bottom: #808080 1px solid;
+					background: #0e0e0e;
+
+					&:last-child {
+						border-bottom-width: 0;
+					}
+					
+					> a {
+						
+						color: #fff;
+						padding: 5px;
+						display: block;
+						text-decoration: none !important;
+						
+						&:hover {
+							text-decoration: none !important;
+						}
+						
+					}
+
+					
+					// third level
+					
+					> ul {
+
+						display: block;
+						margin: -1px 2px 0 -1px;
+						padding: 0;
+						list-style: none;
+						display: none;
+						
+						position: absolute;
+						top: 0px;
+						left: 100%;
+						width: 100%;
+						width: calc(100% - 4px);
+						min-width: 250px;
+						
+						border: #717171 1px solid;
+						@include multi-border-radius(0, $border-radius, $border-radius, 0);
+						-webkit-box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+						-moz-box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+						box-shadow: inset 0px 0px 0px 1px #8d8d8d;
+						
+						> li {
+									
+							display: block;
+							margin: 0 1px;
+							padding: 0;
+							position: relative;
+							border-bottom: #808080 1px solid;
+							background: #0e0e0e;
+
+							&:last-child {
+								border-bottom-width: 0;
+							}
+							
+							> a {
+								
+								color: #fff;
+								padding: 5px;
+								display: block;
+								text-decoration: none !important;
+								
+								&:hover {
+									text-decoration: none !important;
+								}
+								
+							}
+							
+							&:hover {
+							
+								> a {
+								
+									background-color: lighten(#0e0e0e, 25%);
+								
+								}
+							
+							}
+							
+						}
+							
+					}
+					
+					
+					&:hover {
+					
+						background-color: lighten(#0e0e0e, 25%);
+						
+						> ul {
+					
+							display: block;
+						
+						}
+						
+					}
+					
+
+				}
+					
+			}
+			
+			&:hover {
+				
+				&.has-submenu:after {
+					display: none;
+				}
+				
+				> a {
+				
+					@include vertical-gradient(#0e0e0e, #0e0e0e);
+					
+				}
+				
+				> ul {
+					
+					display: block;
+					
+				}
+			
+			}
+		
+		}
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+

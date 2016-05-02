@@ -1,0 +1,115 @@
+body {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	background: #fff2b2 url('images/site-bg.png') repeat-y top center;
+	min-width: 1000px;
+}
+
+.browser-warning {
+
+	color: #fff;
+	display: block;
+	
+	a {
+		color: inherit;
+	}
+	
+}
+
+img {
+	max-width: 100%;
+	position: relative;
+	height: auto;
+}
+
+button,
+select,
+textarea,
+input,
+a {
+	outline: none !important;
+}
+
+
+.site-pagination,
+.form-wrapper {
+	margin-bottom: 30px;
+}
+
+.line {
+
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	
+	position: relative;
+	border-top: #e0e0e0 1px solid;
+	
+}
+
+.breadcrumb {
+	background: transparent;
+	padding: 0;
+	margin: 0 0 30px 0;
+	
+	> .active {
+		color: $gray;
+	}
+	
+}
+
+.list-folders {
+	
+	> li {
+		margin: 4px 0;
+	}
+	
+}
+
+.archive-list {
+	
+	margin: 0 0 45px 0;
+
+	.trow > .trow > div {
+		padding: 3px 12px 3px 0;
+	}
+	
+}
+
+.print-layout {
+	
+	background: #fff !important;
+	min-width: 0px !important;
+	margin: 15px 0 !important;
+	
+	.content-block-body {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	.sidebar-right,
+	.sidebar-left,
+	.site-footer,
+	.site-header {
+		display: none !important;
+	}
+	
+	.site-content {
+		width: 100% !important;
+		max-width: 650px !important;
+	}
+	
+	.site-main {
+		> .container {
+			margin:0 !important;
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+

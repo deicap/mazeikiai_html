@@ -1,0 +1,44 @@
+
+
+.gallery-thumb-image {
+	
+	display: table;
+	height: 95px;
+	position: relative;
+	text-align: center;
+	margin: 0 auto 10px auto;
+	
+	> div {
+		
+		vertical-align: middle;
+		display: table-cell;
+		
+	}
+	
+	a {
+		display: inline-block;
+		text-align: center;
+		@include box-shadow(0,0,3px,$gray-light);
+		padding: 3px;
+		&:hover {
+			@include opacity(0.8);
+		}
+	}
+	
+	img {
+		max-width: 130px;
+		height: auto;
+	}
+	
+}
+
+.gallery-thumb-list-item {
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.gallery-thumb-title {
+	margin: 0 0 7px 0;
+	padding: 0;
+	font-size: 12px;
+}

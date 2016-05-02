@@ -1,0 +1,62 @@
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1em;
+}
+
+ul, ol {
+	margin-bottom: 30px;
+}
+
+.text-underline {
+	text-decoration: underline !important;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.file-list {
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	li {
+		font-size: 15px;
+		margin: 7px 0;
+	}
+	
+	.file-list {
+		margin-left: 21px;
+		
+		li {
+			font-size: 13px;
+			
+			.fa {
+				color: $gray-dark;
+				font-size: 1.2em;
+				margin-right: 7px;
+			}
+				
+			a {
+				color: $gray;
+
+			}
+			
+		}
+		
+	}
+	
+}
