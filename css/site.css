@@ -6049,7 +6049,7 @@ ul, ol {
         padding: 4px;
         text-decoration: none !important;
         text-transform: uppercase;
-        font-family: "Centuri Schoolbook", "Century", "Times New Roman", Georgia, Times, serif;
+        font-family: "Centuri Schoolbook", "Times New Roman", Georgia, Times, serif;
         font-size: 14px;
         font-weight: bold;
         min-height: 59px;
@@ -6186,7 +6186,7 @@ ul, ol {
 .sidebar-block-header {
   text-decoration: none !important;
   text-transform: uppercase;
-  font-family: "Centuri Schoolbook", "Century", "Times New Roman", Georgia, Times, serif;
+  font-family: "Centuri Schoolbook", "Times New Roman", Georgia, Times, serif;
   font-size: 14px;
   line-height: 1.1;
   color: #fff;
@@ -6336,7 +6336,7 @@ ul, ol {
   padding: 13px 55px 13px 15px;
   position: relative;
   text-transform: uppercase;
-  font-family: "Centuri Schoolbook", "Century", "Times New Roman", Georgia, Times, serif;
+  font-family: "Centuri Schoolbook", "Times New Roman", Georgia, Times, serif;
   font-size: 14px;
   color: #fff; }
   .content-block-header h1, .content-block-header h2, .content-block-header h3 {
