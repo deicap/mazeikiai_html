@@ -4,14 +4,6 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 		<div class="col-xs-6">
 	
 			<section class="content-block">
@@ -24,7 +16,7 @@
 					
 					<div class="post-list">
 						
-						<?php for ($i = 1; $i <= 10; $i++) { ?>
+						<?php for ($i = 1; $i <= 13; $i++) { ?>
 							
 							<div class="post-list-item">
 							
@@ -102,7 +94,7 @@
 					
 					<div class="post-list">
 						
-						<?php for ($i = 1; $i <= 10; $i++) { ?>
+						<?php for ($i = 1; $i <= 11; $i++) { ?>
 							
 							<div class="post-list-item">
 							
@@ -167,7 +159,16 @@
 		
 		
 		
+		</div>
 		
+		
+		
+		
+		
+		
+		
+		
+		<div class="row">
 		
 		
 		
@@ -185,7 +186,7 @@
 					
 					<div class="post-list">
 						
-						<?php for ($i = 1; $i <= 10; $i++) { ?>
+						<?php for ($i = 1; $i <= 16; $i++) { ?>
 							
 							<div class="post-list-item">
 							
